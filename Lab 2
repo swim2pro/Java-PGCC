@@ -1,0 +1,68 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javalab2;
+
+/**
+ *
+ * @author naomi
+ */
+public class JavaLab2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //Scanner input;--commented out because assignment was 
+        //changed not to need user input
+        double e, f, g, myInt, math, counter, i;     //creates variables
+        int facNum, newNum, num;     //creates variables
+        e = 1;  //initializes variable used to hold value of e calcuted to 10
+        f = 1;  //initializes variable used to hold value of e calcuted to 20
+        g = 1;  //initializes variable used to hold value of e calcuted to 30
+        i = 5;  //initializes variable i for loop
+        //num = 1;
+        while (i < 10) {
+                num = 10;
+                facNum = 1;
+                newNum = 1;       
+                for (i = 1; i < 10; i++){   //for loop to 10 to calc factorial
+                    facNum = facNum * newNum;   //multiplies one number to the previous number
+                    //as per factorial equation
+                    newNum++;   //increases number to multiply in factorial equation
+                    e += (1.0/facNum);  //stores the fractions facts to create value                
+                }
+                System.out.print(e + "\n"); //print out value of e up to 10 fact
+                
+            }
+        while (i < 20) {
+                facNum = 1;
+                newNum = 1;       
+                for (i = 1; i < 20; i++){   //for loop to 20 to calc factorial
+                    facNum = facNum * newNum;   //multiplies one number to the previous number
+                    //as per factorial equation
+                    newNum++;   //increases number to multiply in factorial equation
+                    f += (1.0/facNum);  //stores the fractions facts to create value               
+                }
+                System.out.print(f + "\n"); //print out value of e up to 20 fact
+        }
+        
+        while (i < 30) {
+                facNum = 1;
+                newNum = 1;       
+                for (i = 1; i < 30; i++){   //for loop to 30 to calc factorial
+                    facNum = facNum * newNum;   //multiplies one number to the previous number
+                    //as per factorial equation
+                    newNum++;   //increases number to multiply in factorial equation
+                    g += (1.0/facNum);  //stores the fractions facts to create value
+                }
+                System.out.print(g + "\n"); //print out value of e up to 30 fact
+        }
+        
+        }
+    }
+    
+
