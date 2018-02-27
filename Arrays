@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javapractice7;
+
+/**
+ *
+ * @author naomi
+ */
+import java.util.Scanner;
+public class JavaPractice7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        double[] myList = new double[5];  //creates array myList with length 5
+        myList[0] = 2;  //adds double to index 0 of myList array
+        myList[1] = 3;
+        myList[2] = 16;
+        myList[3] = 9;
+        myList[4] = 25;
+        
+        System.out.print(myList.length + "\n"); //prints length of myList array
+        
+        for (int i = 0; i<myList.length; i++) //prints myList array
+            System.out.print(myList[i] + " ");
+        
+        System.out.print("\n"); //prints blank line
+        
+        //subtracts value of index 3 from index 2 of myList array and prints value
+        myList[0] = myList[2] - myList[3];
+        System.out.print(myList[0]);
+        
+        
+      
