@@ -48,3 +48,59 @@ public class JavaPractice7 {
         for (int i=0; i<aList.length; i++)
             total += aList[i];
         System.out.print(total);
+        
+        //calls methods defined below
+        int[] myArr = {2, 4, 6, 8, 10};
+		int[] secArr = {1, 3, 5, 7, 9};
+		int[] dobArr = doubleArray(myArr);
+		int[] copArr = myCopy(myArr);
+		matchArrays(myArr, secArr);
+		countEven(myArr);
+		
+		printArray(copArr);
+		printArray(dobArr);
+    }
+     
+    //swaps objects in array from last to first
+	static int[] mySwap(int[] nums) {
+		int numSwap[] = new int[nums.length];
+		for (int i = 0; i < nums.length; i++) {
+			 numSwap[i] = nums[nums.length - i - 1];
+		}
+		return numSwap;
+    }
+    
+    //copies object from one array into another
+	static int[] myCopy(int[] nums) {
+		int b[] = new int[nums.length];
+		for (int i = 0; i < nums.length; i++) {
+			b[i] = nums[i];
+		}
+		return b;
+	}
+    
+    //double the values of the numbers in each index of an array
+	static int[] doubleArray(int[] orig) {
+		int[] myNew = new int[orig.length];
+		for (int i = 0; i < orig.length; i++) {
+			myNew[i] = 2*orig[i];
+		}
+		return myNew;
+	}
+    
+    //counts the number of even numbers in an array
+	static void countEven(int[] nums) {
+		int count = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] % 2 == 0) {
+				count++;
+			}
+		}
+		System.out.print(count);
+	}
+    
+    
+    
+    
+    
+}
