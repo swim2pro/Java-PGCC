@@ -35,5 +35,16 @@ public class JavaPractice7 {
         myList[0] = myList[2] - myList[3];
         System.out.print(myList[0]);
         
+        //adds random numbers to an array with length 5 and prints out the numbers in the array
+        double[] aList = new double[5];
+        for (int i = 0; i < aList.length; i++){
+            aList[i] = Math.random() * 100;
+            System.out.print(aList[i] + " ");
+        }
+        System.out.print("\n");
         
-      
+        //prints the total of the numbers in the previous array
+        double total = 0;
+        for (int i=0; i<aList.length; i++)
+            total += aList[i];
+        System.out.print(total);
