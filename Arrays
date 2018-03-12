@@ -5,10 +5,6 @@
  */
 package javapractice7;
 
-/**
- *
- * @author naomi
- */
 import java.util.Scanner;
 public class JavaPractice7 {
 
