@@ -5,11 +5,6 @@
  */
 package javalab1;
 
-/**
- *
- * @author naomi
- */
-
 import java.util.Scanner;
 public class JavaLab1 {
 
